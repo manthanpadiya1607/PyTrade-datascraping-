@@ -2,10 +2,10 @@ import requests
 import pandas as pd
 import pytz
 
-# Define the API endpoint URL
+# Checking the API endpoint URL
 url = "https://api-testnet.bybit.com/v5/market/mark-price-kline?category=inverse&symbol=BTCUSD&interval=15&start=1609483705&end=1672555705"
 
-# Send the API request and retrieve the response
+# Send the API request and get the response
 response = requests.get(url)
 response_data = response.json()
 
